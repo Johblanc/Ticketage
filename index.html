@@ -15,7 +15,7 @@
     <section class="m-2 bg-info rounded-2">
         <h2 class="bg-info rounded-2 fs-6 p-1 text-center">Ici c’est comme à la poissonnerie, il faut faire la queue!</h2>
     </section>
-    <form class="m-2 bg-info rounded-2">
+    <form id="formBox" class="m-2 bg-info rounded-2">
         <div class="p-1 d-flex justify-content-evenly">
             <label for="user-select" class="">Ton nom : </label>
             <select id="user-select">
@@ -26,7 +26,7 @@
             <label for="descript">Explique ton problème :</label>
         </div>
         <div class="p-1 d-flex justify-content-evenly w-100">
-            <input type="text" id="descript" class=" w-100">
+            <input id="entry" type="text" id="descript" class=" w-100">
         </div>
         <div class="p-1 d-flex justify-content-evenly">
             <input type="submit" value="Ajouter">
@@ -37,38 +37,7 @@
         <div class="d-flex justify-content-evenly">
             <button>Au suivant !</button>
         </div>
-        <ul class="list-group">
-            <!-- LA PARTIE SUIVANTE DOIT ETRE RENDUE DYNAMIQUE AVEC JS -->
-            <li class="m-2 bg-primary rounded-2 p-2 list-group-item">
-                <div class="d-flex justify-content-between">
-                    <p>Johann</p>
-                    <p>ID055500</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit modi nobis voluptatem nisi deserunt perspiciatis nesciunt magni et dolores rerum ab pariatur, consequatur nihil laboriosam tempore quia numquam nostrum voluptatum?</p>
-                    <img src="next.svg" alt="Bouton passer son tour" >
-                </div>
-            </li>
-            <li class="m-2 bg-primary rounded-2 p-2 list-group-item">
-                <div class="d-flex justify-content-between">
-                    <p>Johann</p>
-                    <p>ID055500</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit modi nobis voluptatem nisi deserunt perspiciatis nesciunt magni et dolores rerum ab pariatur, consequatur nihil laboriosam tempore quia numquam nostrum voluptatum?</p>
-                    <img src="next.svg" alt="Bouton passer son tour" >
-                </div>
-            </li>
-            <li class="m-2 bg-primary rounded-2 p-2 list-group-item">
-                <div class="d-flex justify-content-between">
-                    <p>Johann</p>
-                    <p>ID055500</p>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit modi nobis voluptatem nisi deserunt perspiciatis nesciunt magni et dolores rerum ab pariatur, consequatur nihil laboriosam tempore quia numquam nostrum voluptatum?</p>
-                    <img  >
-                </div>
-            </li>
+        <ul id="liste-tickets" class="list-group">
         </ul>
     </section>
 </body>
