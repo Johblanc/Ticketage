@@ -19,13 +19,19 @@ function ajoutUtilisateur(nom){
 function recupUtilisateurs() {
     fetch(`https://webhelprequest.deta.dev/users`)
     .then(response => response.json())
-    .then(response => console.log(response));
+    .then(response => remplirComboBox(response.data));
 
 }
 
 /** Remplir la ComboBox avec les nom des utilisateurs */
 function remplirComboBox(listeUtilisateurs){
-
+    const COMBOBOX = document.getElementById("user-select");
+    listeUtilisateurs.map( item => {
+        let newOption = document.createElement("option");
+        newOption.setAttribute("value",item.username );
+        newOption.textContent = item.username;
+        COMBOBOX.appendChild(newOption);
+    })
 }
 
 /** Ajout d'un nouveau ticket par un utilisateur */
@@ -51,7 +57,7 @@ function supprimTicket(){
 
 /** Inverse un ticket avec le suivant */
 function switchTicket(){
-    
+
 }
 
 
