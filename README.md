@@ -1,5 +1,13 @@
 # Ticketage
 
+## Lien
+
+Vers le deploiment
+https://johblanc.github.io/Ticketage/
+
+Vers le github
+https://github.com/Johblanc/Ticketage
+
 ## Brief
 
 ### Contexte du projet
